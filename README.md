@@ -26,8 +26,9 @@ python -m scripts.convert --quantize --model_id <model_name_or_path>
 > Files will be saved in the `./models/` folder by default. Move it to the root of your project to use the model.
 <br/>
 
-## Useful Resources
+## Attributions
+###### Useful Links
 - [Transformers.js Documentation](https://huggingface.co/docs/transformers.js/en/index)
 
-## Credits
+###### Credits
 - [Hugging Face](https://github.com/huggingface)
