@@ -18,8 +18,8 @@ pip install -r requirements.txt
 ```sh
 python -m scripts.convert --quantize --model_id <model_name_or_path>
 ```
-> [!TIP]
-> You can use `--modes fp16` as an optional field to use half-precision floating-point format and reduce the ONNX file sizes. The `<model_name_or_path>` parameter is the model name on Hugging Face, for example, **facebook/bart-large-cnn**
+> [!NOTE]
+> Use the optional `--modes fp16` flag to set model as half-precision floating-point format and reduce the ONNX file sizes. The `<model_name_or_path>` parameter is the model name on Hugging Face, for example, **facebook/bart-large-cnn**
 <br/>
 
 ## Credits
