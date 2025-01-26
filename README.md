@@ -12,14 +12,18 @@ python -m pip install optimum
 pip install -r requirements.txt
 ```
 > [!NOTE]
-> **scripts**/**convert.py**, **quantize.py**, and **requirements.txt** files are taken from [huggingface/transformers.js](https://github.com/huggingface/transformers.js) repository
+> The **scripts**/**convert.py**, **quantize.py**, and **requirements.txt** files are taken from [huggingface/transformers.js](https://github.com/huggingface/transformers.js/tree/main/scripts)
 
+<<<<<<< HEAD
 4. Select a model of your choice from Hugging Face [models](https://huggingface.co/models) to convert
+=======
+4. Convert a model of your choice from [Hugging Face](https://huggingface.co/models)
+>>>>>>> 9eb564249f0860ce92a93223deeac35949f58cca
 ```sh
 python -m scripts.convert --quantize --model_id <model_name_or_path>
 ```
 > [!TIP]
-> You can use `--modes fp16` as an optional field to use half-precision floating-point format and reduce the ONNX file sizes. The `<model_name_or_path>` parameter is the model name on Hugging Face, for example, **facebook/bart-large-cnn**
+> Use the optional `--modes fp16` flag to set model as half-precision floating-point format and reduce the ONNX file sizes. The `<model_name_or_path>` parameter is the model name on Hugging Face, for example, **facebook/bart-large-cnn**
 <br/>
 
 5. Your converted model is ready to be used with the [@huggingface/transformers](https://www.npmjs.com/package/@huggingface/transformers) npm package
