@@ -1,4 +1,4 @@
-## A guide to download and use pre-trained models locally with Hugging Face's Transformers.js library
+## Hugging Face Transformers.js Guide
 
 1. Download [Python](https://www.python.org/downloads/) with pip
 
@@ -14,13 +14,20 @@ pip install -r requirements.txt
 > [!NOTE]
 > **scripts**/**convert.py**, **quantize.py**, and **requirements.txt** files are taken from [huggingface/transformers.js](https://github.com/huggingface/transformers.js) repository
 
-4. Convert a model of your choice from Hugging Face [models](https://huggingface.co/models)
+4. Select a model of your choice from Hugging Face [models](https://huggingface.co/models) to convert
 ```sh
 python -m scripts.convert --quantize --model_id <model_name_or_path>
 ```
 > [!TIP]
 > You can use `--modes fp16` as an optional field to use half-precision floating-point format and reduce the ONNX file sizes. The `<model_name_or_path>` parameter is the model name on Hugging Face, for example, **facebook/bart-large-cnn**
 <br/>
+
+5. Your converted model is ready to be used with the [@huggingface/transformers](https://www.npmjs.com/package/@huggingface/transformers) npm package
+> [!TIP]
+> Files will be saved in `./models/` by default.
+
+## Useful Resources
+- [Transformers.js Documentation](https://huggingface.co/docs/transformers.js/en/index)
 
 ## Credits
 - [Hugging Face](https://github.com/huggingface)
