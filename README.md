@@ -12,7 +12,7 @@ python -m pip install optimum
 pip install -r requirements.txt
 ```
 > [!NOTE]
-> **scripts**/**convert.py**, **quantize.py**, and **requirements.txt** files are taken from the [huggingface/transformers.js](https://github.com/huggingface/transformers.js) repository
+> **scripts**/**convert.py**, **quantize.py**, and **requirements.txt** files are taken from the [huggingface/transformers.js](https://github.com/huggingface/transformers.js/tree/main/scripts) repository
 
 4. Convert a model of your choice from [Hugging Face](https://huggingface.co/models)
 ```sh
